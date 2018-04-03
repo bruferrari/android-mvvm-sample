@@ -1,0 +1,110 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.bferrari.mvvmsample"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        signingConfigs {
+            release {
+                storeFile file("mvvmsample.jks")
+                storePassword "YOUR PASSWORD HERE"
+                keyAlias "ALIAS HERE"
+                keyPassword "YOUR PASSWORD HERE"
+            }
+        }
+
+        buildTypes {
+            release {
+                minifyEnabled true
+                signingConfig signingConfigs.release
+
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+
+            debug {
+                useProguard false
+            }
+        }
+
+        dataBinding {
+            enabled = true
+        }
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+
+        sourceSets {
+            main{
+                java.srcDirs += 'src/main/kotlin'
+            }
+            staging{
+                java.srcDirs += 'src/prod/kotlin'
+            }
+            debug{
+                java.srcDirs += ['src/main/kotlin', 'src/debug/kotlin']
+            }
+            test{
+                java.srcDirs += 'src/test/kotlin'
+            }
+
+        }
+
+        flavorDimensions 'dimension'
+
+        productFlavors {
+            prod {
+                dimension 'dimension'
+                buildConfigField "String", "API_URL", "\"https://api.github.com/\""
+            }
+            staging {
+                dimension 'dimension'
+                buildConfigField "String", "API_URL", "\"https://api.github.com/\""
+            }
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support.constraint:constraint-layout:$rootProject.constraintLayoutVersion"
+
+    //Dagger
+    implementation "com.google.dagger:dagger:$rootProject.daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$rootProject.daggerVersion"
+    kapt "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
+    kapt "com.google.dagger:dagger-android-processor:$rootProject.daggerVersion"
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+
+    //Timber
+    implementation "com.jakewharton.timber:timber:$rootProject.timberVersion"
+
+    //Rx Java
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxJavaVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxAndroidVersion"
+
+    testImplementation "junit:junit:$rootProject.junitVersion"
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+
+kapt {
+    generateStubs = true
+}

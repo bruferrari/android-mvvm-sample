@@ -100,7 +100,13 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxJavaVersion"
     implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxAndroidVersion"
 
+    //Lifecycle
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation "android.arch.lifecycle:common-java8:1.1.1"
+    implementation "android.arch.lifecycle:reactivestreams:1.1.1"
+
     testImplementation "junit:junit:$rootProject.junitVersion"
+    testImplementation "android.arch.core:core-testing:1.1.1"
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }

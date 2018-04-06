@@ -10,35 +10,18 @@ import io.reactivex.disposables.CompositeDisposable
 import timber.log.Timber
 
 interface ProjectDataSource {
-    fun unsubscribe()
     fun getProjects(organization: String): LiveData<List<Project>>
 }
 
-class ProjectRepository(val api: AppApi,
-                        val schedulerProvider: SchedulerProviderContract) : ProjectDataSource {
-
-    private val compositeDisposable = CompositeDisposable()
+class ProjectRepository(private val api: AppApi) : ProjectDataSource {
 
     companion object {
         const val ORG = "google"
     }
 
-    override fun unsubscribe() {
-        compositeDisposable.clear()
-    }
-
     override fun getProjects(organization: String): LiveData<List<Project>> {
         val data = MutableLiveData<List<Project>>()
-
-        api.getRepos(ORG)
-                .subscribeOn(schedulerProvider.io)
-                .observeOn(schedulerProvider.ui)
-                .subscribe ({
-                    data.value = it
-                }, {
-                    Timber.d(it)
-                })
-                .addToCompositeDisposable(compositeDisposable)
+        api.getRepos(ORG).map { projects -> data.value = projects }
 
         return data
     }

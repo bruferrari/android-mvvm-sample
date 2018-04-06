@@ -12,7 +12,5 @@ class DataModule {
 
     @Provides
     @Singleton
-    fun providesProjectDataSource(api: AppApi,
-                                  schedulerProviderContract: SchedulerProviderContract)
-            = ProjectRepository(api, schedulerProviderContract)
+    fun providesProjectDataSource(api: AppApi) = ProjectRepository(api)
 }

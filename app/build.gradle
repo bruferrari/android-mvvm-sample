@@ -105,6 +105,8 @@ dependencies {
     implementation "android.arch.lifecycle:common-java8:1.1.1"
     implementation "android.arch.lifecycle:reactivestreams:1.1.1"
 
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+
     testImplementation "junit:junit:$rootProject.junitVersion"
     testImplementation "android.arch.core:core-testing:1.1.1"
     androidTestImplementation 'com.android.support.test:runner:1.0.1'

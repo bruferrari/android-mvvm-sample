@@ -11,6 +11,7 @@ import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
@@ -28,7 +29,9 @@ open class ApiModule {
     fun providesOkHttpClient(@Named("ApplicationContext") context: Context): OkHttpClient {
         val connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
 
-        return getOkHttpBuilder()
+        val logging = HttpLoggingInterceptor()
+
+        val builder = getOkHttpBuilder()
                 .connectTimeout(30, TimeUnit.SECONDS)
                 .writeTimeout(30, TimeUnit.SECONDS)
                 .readTimeout(30, TimeUnit.SECONDS)
@@ -47,21 +50,25 @@ open class ApiModule {
 
                     response
                 }
-                .build()
+
+        if (BuildConfig.DEBUG) {
+            logging.level = HttpLoggingInterceptor.Level.BODY
+            builder.addInterceptor(logging)
+        }
+
+        return builder.build()
     }
 
     @Provides
     @Singleton
-    fun providesAppApi(okHttpClient: OkHttpClient): AppApi {
-        val retrofit = Retrofit.Builder()
+    fun providesAppApi(okHttpClient: OkHttpClient): AppApi
+            = Retrofit.Builder()
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .baseUrl(BuildConfig.API_URL)
                 .client(okHttpClient)
                 .build()
-
-        return retrofit.create(AppApi::class.java)
-    }
+                .create(AppApi::class.java)
 
     @Provides
     @Singleton

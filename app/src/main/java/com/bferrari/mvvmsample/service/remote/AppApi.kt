@@ -8,6 +8,6 @@ import retrofit2.http.Path
 interface AppApi {
 
     @GET("orgs/{org}/repos")
-    fun getRepos(@Path("org")organization: String): Observable<List<Project>>
+    fun getRepos(@Path("org") organization: String): Observable<List<Project>>
 
 }

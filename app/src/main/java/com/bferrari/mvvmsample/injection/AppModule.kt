@@ -3,6 +3,8 @@ package com.bferrari.mvvmsample.injection
 import android.app.Application
 import android.content.Context
 import com.bferrari.mvvmsample.AppApplication
+import com.bferrari.mvvmsample.util.SchedulerProvider
+import com.bferrari.mvvmsample.util.SchedulerProviderContract
 import dagger.Module
 import dagger.Provides
 import javax.inject.Named
@@ -19,4 +21,8 @@ class AppModule {
     @Provides
     @Singleton
     fun providesApplication(application: AppApplication): AppApplication = application
+
+    @Provides
+    @Singleton
+    fun providesSchedulerProvider(): SchedulerProviderContract = SchedulerProvider()
 }

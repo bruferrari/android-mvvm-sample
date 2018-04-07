@@ -25,13 +25,15 @@ class ProjectsActivity : AppCompatActivity(), Injectable {
         AndroidInjection.inject(this)
         viewModel = ViewModelProviders.of(this, viewModelFactory).get(ProjectsViewModel::class.java)
 
+        viewModel.loadProjects()
+
         observeViewModel(viewModel)
     }
 
     private fun observeViewModel(viewModel: ProjectsViewModel) {
-        viewModel.getProjectsObservable().observe(this, Observer<List<Project>> {
+        viewModel.getProjectsObservable().observe(this, Observer {
             it?.let {
-                Timber.d(it.toString())
+                it.forEach { Timber.d(it.name) }
             }
         })
     }

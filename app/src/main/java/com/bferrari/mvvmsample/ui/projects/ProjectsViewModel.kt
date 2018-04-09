@@ -6,13 +6,17 @@ import android.arch.lifecycle.ViewModel
 import com.bferrari.mvvmsample.extensions.addToCompositeDisposable
 import com.bferrari.mvvmsample.service.model.Project
 import com.bferrari.mvvmsample.service.repository.ProjectDataSource
+import com.bferrari.mvvmsample.util.Response
 import com.bferrari.mvvmsample.util.SchedulerProviderContract
 import io.reactivex.disposables.CompositeDisposable
+import timber.log.Timber
 import javax.inject.Inject
 
 interface ProjectsViewModelContract {
-    fun getProjectsObservable(): LiveData<List<Project>>
+
     fun unsubscribe()
+
+    fun getProjectsObservable(): MutableLiveData<Response>
 }
 
 class ProjectsViewModel
@@ -21,7 +25,7 @@ class ProjectsViewModel
     private val compositeDisposable = CompositeDisposable()
     @Inject lateinit var schedulerProvider: SchedulerProviderContract
 
-    private val data = MutableLiveData<List<Project>>()
+    private val data = MutableLiveData<Response>()
 
     override fun unsubscribe() {
         compositeDisposable.clear()
@@ -31,8 +35,13 @@ class ProjectsViewModel
         dataSource.getProjects("google")
                 .subscribeOn(schedulerProvider.io)
                 .observeOn(schedulerProvider.ui)
-                .subscribe { data.value = it }
-                .addToCompositeDisposable(compositeDisposable)
+                .doOnSubscribe { data.value = Response.loading() }
+                .subscribe ({
+                    data.value = Response.success(it)
+                }, {
+                    Timber.e(it)
+                    data.value = Response.error(it)
+                }).addToCompositeDisposable(compositeDisposable)
     }
 
     override fun getProjectsObservable() = data

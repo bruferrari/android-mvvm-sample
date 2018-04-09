@@ -6,11 +6,8 @@ import android.arch.lifecycle.ViewModel
 import com.bferrari.mvvmsample.extensions.addToCompositeDisposable
 import com.bferrari.mvvmsample.service.model.Project
 import com.bferrari.mvvmsample.service.repository.ProjectDataSource
-import com.bferrari.mvvmsample.util.SchedulerProvider
 import com.bferrari.mvvmsample.util.SchedulerProviderContract
-import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
 interface ProjectsViewModelContract {

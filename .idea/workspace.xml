@@ -11,9 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cabcbea2-c276-4604-8631-7350903ed968" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/extensions/ContextExtensions.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/extensions/ContextExtensions.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsActivity.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,11 +72,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ProjectsViewModel.kt" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ProjectsViewModel.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsViewModel.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="36" column="46" lean-forward="true" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+                <state relative-caret-position="324">
+                  <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -96,11 +94,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ContextExtensions.kt" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ContextExtensions.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/extensions/ContextExtensions.kt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="252">
-                  <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                  <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
                   <folding>
                     <element signature="e#44#191#0" expanded="true" />
                   </folding>
@@ -147,8 +145,8 @@
           <file leaf-file-name="ProjectsActivity.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsActivity.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="314">
-                  <caret line="48" column="34" lean-forward="false" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+                <state relative-caret-position="156">
+                  <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
                   <folding>
                     <element signature="e#45#827#0" expanded="true" />
                   </folding>
@@ -198,7 +196,7 @@
               </provider>
               <provider editor-type-id="text-editor">
                 <state relative-caret-position="288">
-                  <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+                  <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
                   <folding />
                 </state>
               </provider>
@@ -4649,7 +4647,7 @@
       </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -4673,18 +4671,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsViewModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="36" column="46" lean-forward="true" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/extensions/ContextExtensions.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#44#191#0" expanded="true" />
           </folding>
@@ -4693,11 +4683,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="48" column="34" lean-forward="false" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        <state relative-caret-position="156">
+          <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
           <folding>
             <element signature="e#45#827#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>

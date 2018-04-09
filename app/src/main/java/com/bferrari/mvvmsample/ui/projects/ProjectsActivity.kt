@@ -3,13 +3,10 @@ package com.bferrari.mvvmsample.ui.projects
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProvider
 import android.arch.lifecycle.ViewModelProviders
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
-import android.widget.Toast
 import com.bferrari.mvvmsample.R
 import com.bferrari.mvvmsample.extensions.hide
 import com.bferrari.mvvmsample.extensions.openInBrowser

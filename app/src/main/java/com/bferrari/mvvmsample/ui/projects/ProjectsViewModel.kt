@@ -1,10 +1,8 @@
 package com.bferrari.mvvmsample.ui.projects
 
-import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
 import com.bferrari.mvvmsample.extensions.addToCompositeDisposable
-import com.bferrari.mvvmsample.service.model.Project
 import com.bferrari.mvvmsample.service.repository.ProjectDataSource
 import com.bferrari.mvvmsample.util.Response
 import com.bferrari.mvvmsample.util.SchedulerProviderContract

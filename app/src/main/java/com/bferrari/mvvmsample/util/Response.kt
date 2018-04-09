@@ -1,7 +1,5 @@
 package com.bferrari.mvvmsample.util
 
-import kotlin.reflect.KClass
-
 class Response(val status: Status,
                val data: Any? = null,
                val error: Throwable? = null) {

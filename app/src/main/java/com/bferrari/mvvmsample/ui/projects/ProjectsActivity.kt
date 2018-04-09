@@ -52,8 +52,11 @@ class ProjectsActivity : AppCompatActivity(), Injectable {
                 if (it.status == Status.SUCCESS) {
                     setProjects(it.data as List<Project>)
                     handleUiWidgets()
-                } else if (it.status == Status.ERROR)
+                } else if (it.status == Status.ERROR) {
                     displayError(getString(R.string.err_general))
+                    handleUiWidgets()
+                }
+
             }
             viewModel.unsubscribe()
         })

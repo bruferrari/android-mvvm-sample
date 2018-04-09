@@ -22,7 +22,7 @@ class ProjectsViewModel
     @Inject constructor(private val dataSource: ProjectDataSource) : ViewModel(), ProjectsViewModelContract {
 
     private val compositeDisposable = CompositeDisposable()
-    private val schedulerProvider = SchedulerProvider()
+    @Inject lateinit var schedulerProvider: SchedulerProviderContract
 
     private val data = MutableLiveData<List<Project>>()
 

@@ -11,6 +11,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import android.widget.Toast
 import com.bferrari.mvvmsample.R
+import com.bferrari.mvvmsample.extensions.hide
 import com.bferrari.mvvmsample.extensions.openInBrowser
 import com.bferrari.mvvmsample.injection.Injectable
 import com.bferrari.mvvmsample.service.model.Project
@@ -45,6 +46,7 @@ class ProjectsActivity : AppCompatActivity(), Injectable {
         viewModel.getProjectsObservable().observe(this, Observer {
             it?.let {
                 setProjects(it)
+                progressBar.hide()
             }
         })
     }

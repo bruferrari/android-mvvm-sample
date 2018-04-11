@@ -11,33 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cabcbea2-c276-4604-8631-7350903ed968" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/local/AppDatabase.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/local/SuggestionDao.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/model/Suggestion.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/LiveDataUtils.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/AppAplication.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/AppAplication.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/extensions/ContextExtensions.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/extensions/ContextExtensions.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/AppModule.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/AppModule.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/DataModule.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/DataModule.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/repository/ProjectDataSource.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/repository/ProjectDataSource.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsActivity.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsViewModel.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsViewModel.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/Response.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/Response.kt" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,8 +63,8 @@
           <file leaf-file-name="ProjectsViewModel.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsViewModel.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="710">
-                  <caret line="57" column="46" lean-forward="false" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+                <state relative-caret-position="404">
+                  <caret line="40" column="52" lean-forward="true" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
                   <folding>
                     <element signature="e#45#783#0" expanded="true" />
                   </folding>
@@ -149,8 +123,8 @@
           <file leaf-file-name="ProjectsActivity.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsActivity.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="522">
-                  <caret line="109" column="42" lean-forward="false" selection-start-line="109" selection-start-column="42" selection-end-line="109" selection-end-column="42" />
+                <state relative-caret-position="260">
+                  <caret line="107" column="91" lean-forward="true" selection-start-line="107" selection-start-column="91" selection-end-line="107" selection-end-column="91" />
                   <folding>
                     <element signature="e#45#1064#0" expanded="true" />
                     <element signature="e#2379#2410#1" expanded="true" />
@@ -4703,17 +4677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="109" column="42" lean-forward="false" selection-start-line="109" selection-start-column="42" selection-end-line="109" selection-end-column="42" />
-          <folding>
-            <element signature="e#45#1064#0" expanded="true" />
-            <element signature="e#2379#2410#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/repository/ProjectDataSource.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -4726,10 +4689,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsViewModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="57" column="46" lean-forward="false" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+        <state relative-caret-position="404">
+          <caret line="40" column="52" lean-forward="true" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
           <folding>
             <element signature="e#45#783#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="107" column="91" lean-forward="true" selection-start-line="107" selection-start-column="91" selection-end-line="107" selection-end-column="91" />
+          <folding>
+            <element signature="e#45#1064#0" expanded="true" />
+            <element signature="e#2379#2410#1" expanded="true" />
           </folding>
         </state>
       </provider>

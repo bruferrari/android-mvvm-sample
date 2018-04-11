@@ -1,6 +1,5 @@
 package com.bferrari.mvvmsample.ui.projects
 
-import android.arch.lifecycle.MediatorLiveData
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
 import com.bferrari.mvvmsample.extensions.addToCompositeDisposable
@@ -12,8 +11,6 @@ import com.bferrari.mvvmsample.util.SchedulerProviderContract
 import io.reactivex.Observable
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.functions.BiFunction
-import io.reactivex.functions.Function
-import io.reactivex.functions.Function3
 import timber.log.Timber
 import javax.inject.Inject
 

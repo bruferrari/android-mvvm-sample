@@ -3,6 +3,7 @@ package com.bferrari.mvvmsample
 import android.app.Application
 import android.app.Activity
 import com.bferrari.mvvmsample.injection.AppInjector
+import com.facebook.stetho.Stetho
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
 import timber.log.Timber
@@ -18,8 +19,15 @@ open class AppApplication : Application(), HasActivityInjector {
         if (BuildConfig.DEBUG) {
             Timber.plant(Timber.DebugTree())
         }
+
         AppInjector.init(this)
+
+        initializeStetho()
     }
 
     override fun activityInjector(): DispatchingAndroidInjector<Activity>? = dispatchingAndroidInjector
+
+    private fun initializeStetho() {
+        Stetho.initializeWithDefaults(this)
+    }
 }

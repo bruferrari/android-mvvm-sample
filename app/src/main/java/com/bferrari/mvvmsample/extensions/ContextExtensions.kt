@@ -20,3 +20,5 @@ fun View.hide() {
 fun View.show() {
     this.visibility = View.VISIBLE
 }
+
+fun View.isVisible(): Boolean = this.visibility == View.VISIBLE

@@ -20,6 +20,10 @@ class AppModule {
 
     @Provides
     @Singleton
+    fun providesContext(application: Application): Context = application.applicationContext
+
+    @Provides
+    @Singleton
     fun providesApplication(application: AppApplication): AppApplication = application
 
     @Provides

@@ -8,11 +8,15 @@ import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
+import com.arlib.floatingsearchview.FloatingSearchView
+import com.arlib.floatingsearchview.suggestions.model.SearchSuggestion
 import com.bferrari.mvvmsample.R
 import com.bferrari.mvvmsample.extensions.hide
 import com.bferrari.mvvmsample.extensions.openInBrowser
+import com.bferrari.mvvmsample.extensions.show
 import com.bferrari.mvvmsample.injection.Injectable
 import com.bferrari.mvvmsample.service.model.Project
+import com.bferrari.mvvmsample.service.model.Suggestion
 import com.bferrari.mvvmsample.util.Status
 import com.bferrari.mvvmsample.widgets.GenericAdapter
 import dagger.android.AndroidInjection
@@ -27,6 +31,8 @@ class ProjectsActivity : AppCompatActivity(), Injectable {
 
     private lateinit var projectsAdapter: GenericAdapter<Project>
 
+    private var lastQueries: List<Suggestion>? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -38,7 +44,7 @@ class ProjectsActivity : AppCompatActivity(), Injectable {
 
         setupRecyclerView()
         setupRefreshingLayout()
-
+        setupSearchWidget()
     }
 
     override fun onResume() {
@@ -48,18 +54,30 @@ class ProjectsActivity : AppCompatActivity(), Injectable {
 
     private fun observeViewModel(viewModel: ProjectsViewModel) {
         viewModel.getProjectsObservable().observe(this, Observer {
-            it?.let {
-                if (it.status == Status.SUCCESS) {
-                    setProjects(it.data as List<Project>)
-                    handleUiWidgets()
-                } else if (it.status == Status.ERROR) {
-                    displayError(getString(R.string.err_general))
-                    handleUiWidgets()
-                }
+            it?.apply {
+                when {
+                    it.status == Status.SUCCESS -> {
+                        setProjects(it.data?.first)
+                        lastQueries = it.data?.second
+                        handleUiWidgets()
+                    }
 
+                    it.status == Status.ERROR -> {
+                        displayError(getString(R.string.err_general))
+                        handleUiWidgets()
+                    }
+
+                    it.status == Status.LOADING -> {
+                        progressBar.show()
+                    }
+                }
             }
-            viewModel.unsubscribe()
         })
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        viewModel.unsubscribe()
     }
 
     private fun handleUiWidgets() {
@@ -81,7 +99,24 @@ class ProjectsActivity : AppCompatActivity(), Injectable {
         }
     }
 
-    private fun setProjects(projects: List<Project>) {
+    private fun setupSearchWidget() {
+
+        floatingSearchView.setOnQueryChangeListener { oldQuery, newQuery ->
+            floatingSearchView.swapSuggestions(lastQueries)
+        }
+
+        floatingSearchView.setOnSearchListener(object : FloatingSearchView.OnSearchListener {
+
+            override fun onSearchAction(currentQuery: String?) {
+                currentQuery?.let { viewModel.storeQuerySuggestion(Suggestion(organization = currentQuery)) }
+                viewModel.loadProjects(currentQuery)
+            }
+
+            override fun onSuggestionClicked(searchSuggestion: SearchSuggestion?) { }
+        })
+    }
+
+    private fun setProjects(projects: List<Project>?) {
         projectsAdapter = object : GenericAdapter<Project>() {
             override fun getViewHolder(view: View, viewType: Int)
                     = ProjectsViewHolder(view, this@ProjectsActivity::onProjectClick)
@@ -89,7 +124,7 @@ class ProjectsActivity : AppCompatActivity(), Injectable {
             override fun getLayoutId(position: Int, obj: Project) = R.layout.project_item
         }
         recyclerView.adapter = projectsAdapter
-        projectsAdapter.setItems(projects)
+        projectsAdapter.setItems(projects ?: listOf())
     }
 
     fun onProjectClick(project: Project) { openInBrowser(project.htmlUrl) }

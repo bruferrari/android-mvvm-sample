@@ -35,4 +35,9 @@ ext {
     junitVersion = '4.12'
     constraintLayoutVersion = '1.0.2'
     supportLibraryVersion = '27.1.1'
+    lifecycleVersion = '1.1.1'
+    okHttpVersion = '3.9.1'
+    floatingSeachViewVersion = '2.1.1'
+    roomVersion = '1.0.0'
+    stethoVersion = '1.5.0'
 }

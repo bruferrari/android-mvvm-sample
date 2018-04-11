@@ -1,12 +1,19 @@
 package com.bferrari.mvvmsample.ui.projects
 
+import android.arch.lifecycle.MediatorLiveData
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
 import com.bferrari.mvvmsample.extensions.addToCompositeDisposable
+import com.bferrari.mvvmsample.service.model.Project
+import com.bferrari.mvvmsample.service.model.Suggestion
 import com.bferrari.mvvmsample.service.repository.ProjectDataSource
 import com.bferrari.mvvmsample.util.Response
 import com.bferrari.mvvmsample.util.SchedulerProviderContract
+import io.reactivex.Observable
 import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.functions.BiFunction
+import io.reactivex.functions.Function
+import io.reactivex.functions.Function3
 import timber.log.Timber
 import javax.inject.Inject
 
@@ -14,7 +21,7 @@ interface ProjectsViewModelContract {
 
     fun unsubscribe()
 
-    fun getProjectsObservable(): MutableLiveData<Response>
+    fun getProjectsObservable(): MutableLiveData<Response<Pair<List<Project>, List<Suggestion>>>>
 }
 
 class ProjectsViewModel
@@ -23,14 +30,19 @@ class ProjectsViewModel
     private val compositeDisposable = CompositeDisposable()
     @Inject lateinit var schedulerProvider: SchedulerProviderContract
 
-    private val data = MutableLiveData<Response>()
+    private val data = MutableLiveData<Response<Pair<List<Project>, List<Suggestion>>>>()
 
     override fun unsubscribe() {
-        compositeDisposable.clear()
+        compositeDisposable.dispose()
     }
 
-    fun loadProjects() {
-        dataSource.getProjects("google")
+    override fun getProjectsObservable() = data
+
+    fun loadProjects(organization: String? = null) {
+        Observable.zip(dataSource.getProjects(organization ?: "google"),  dataSource.getLastQueries(),
+                BiFunction { projects: List<Project>, suggestions: List<Suggestion> ->
+                    Pair(projects, suggestions)
+                })
                 .subscribeOn(schedulerProvider.io)
                 .observeOn(schedulerProvider.ui)
                 .doOnSubscribe { data.value = Response.loading() }
@@ -42,5 +54,11 @@ class ProjectsViewModel
                 }).addToCompositeDisposable(compositeDisposable)
     }
 
-    override fun getProjectsObservable() = data
+    fun storeQuerySuggestion(suggestion: Suggestion) {
+        dataSource.insertLastQuery(suggestion)
+                .subscribeOn(schedulerProvider.io)
+                .subscribe()
+                .addToCompositeDisposable(compositeDisposable)
+    }
+
 }

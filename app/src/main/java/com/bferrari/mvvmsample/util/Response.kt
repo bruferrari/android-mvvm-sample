@@ -1,13 +1,14 @@
 package com.bferrari.mvvmsample.util
 
-class Response(val status: Status,
-               val data: Any? = null,
+class Response<T>(val status: Status,
+               val data: T? = null,
                val error: Throwable? = null) {
+
     companion object {
-        fun loading() = Response(Status.LOADING)
+        fun <T> loading() = Response<T>(Status.LOADING)
 
-        fun success(data: Any) = Response(Status.SUCCESS, data)
+        fun <T> success(data: T) = Response(Status.SUCCESS, data)
 
-        fun error(error: Throwable) = Response(Status.ERROR, error = error)
+        fun <T> error(error: Throwable) = Response<T>(Status.ERROR, error = error)
     }
 }

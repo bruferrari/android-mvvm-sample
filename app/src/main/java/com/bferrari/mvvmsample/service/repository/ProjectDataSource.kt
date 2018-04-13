@@ -4,28 +4,24 @@ import com.bferrari.mvvmsample.service.local.SuggestionDao
 import com.bferrari.mvvmsample.service.model.Project
 import com.bferrari.mvvmsample.service.model.Suggestion
 import com.bferrari.mvvmsample.service.remote.AppApi
-import com.bferrari.mvvmsample.util.SchedulerProviderContract
-import io.reactivex.Observable
-import timber.log.Timber
+import kotlinx.coroutines.experimental.Deferred
 
 interface ProjectRepository {
-    fun getProjects(organization: String): Observable<List<Project>>
-    fun insertLastQuery(suggestion: Suggestion): Observable<Unit>
-    fun getLastQueries(): Observable<List<Suggestion>>
+    fun getProjects(organization: String): Deferred<List<Project>>
+    fun insertLastQuery(suggestion: Suggestion)
+    fun getLastQueries(): List<Suggestion>
 }
 
 class ProjectDataSource(private val api: AppApi,
-                        private val suggestionDao: SuggestionDao,
-                        private val schedulerProvider: SchedulerProviderContract) : ProjectRepository {
+                        private val suggestionDao: SuggestionDao) : ProjectRepository {
 
-    override fun getProjects(organization: String): Observable<List<Project>>
+    override fun getProjects(organization: String): Deferred<List<Project>>
             = api.getRepos(organization)
-                .subscribeOn(schedulerProvider.io)
-                .doOnNext { it.forEach { Timber.d(it.name) }}
 
-    override fun insertLastQuery(suggestion: Suggestion): Observable<Unit>
-            = Observable.fromCallable { suggestionDao.insert(suggestion) }
+    override fun insertLastQuery(suggestion: Suggestion) {
+        suggestionDao.insert(suggestion)
+    }
 
-    override fun getLastQueries(): Observable<List<Suggestion>>
-            = Observable.fromCallable { suggestionDao.getAll() }
+    override fun getLastQueries(): List<Suggestion>
+            = suggestionDao.getAll()
 }

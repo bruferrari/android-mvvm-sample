@@ -39,6 +39,12 @@ android {
             experimental = true
         }
 
+        kotlin {
+            experimental {
+                coroutines 'enable'
+            }
+        }
+
         dataBinding {
             enabled = true
         }
@@ -122,6 +128,10 @@ dependencies {
 
     //Stetho
     implementation "com.facebook.stetho:stetho:$rootProject.stethoVersion"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.21"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:0.21"
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-experimental-adapter:1.0.0'
 
     testImplementation "junit:junit:$rootProject.junitVersion"
     testImplementation "android.arch.core:core-testing:1.1.1"

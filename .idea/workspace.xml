@@ -11,7 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cabcbea2-c276-4604-8631-7350903ed968" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/LiveDataUtils.kt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/ApiModule.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/ApiModule.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/DataModule.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/DataModule.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/remote/AppApi.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/remote/AppApi.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/repository/ProjectDataSource.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/repository/ProjectDataSource.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsActivity.kt" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsViewModel.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsViewModel.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +54,8 @@
           <file leaf-file-name="ApiModule.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/ApiModule.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="558">
-                  <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+                <state relative-caret-position="404">
+                  <caret line="57" column="9" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -49,24 +63,24 @@
           </file>
           <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-              <provider editor-type-id="android-manifest">
-                <state />
-              </provider>
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="18">
                   <caret line="1" column="68" lean-forward="false" selection-start-line="1" selection-start-column="68" selection-end-line="1" selection-end-column="68" />
                   <folding />
                 </state>
               </provider>
+              <provider editor-type-id="android-manifest">
+                <state />
+              </provider>
             </entry>
           </file>
           <file leaf-file-name="ProjectsViewModel.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsViewModel.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+                <state relative-caret-position="390">
+                  <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
                   <folding>
-                    <element signature="e#45#657#0" expanded="true" />
+                    <element signature="e#45#652#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -75,8 +89,8 @@
           <file leaf-file-name="Response.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/Response.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="54">
-                  <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+                <state relative-caret-position="162">
+                  <caret line="9" column="65" lean-forward="false" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
                   <folding />
                 </state>
               </provider>
@@ -85,11 +99,21 @@
           <file leaf-file-name="ProjectDataSource.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/repository/ProjectDataSource.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="486">
-                  <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+                <state relative-caret-position="360">
+                  <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
                   <folding>
-                    <element signature="e#52#390#0" expanded="true" />
+                    <element signature="e#52#320#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AppApi.kt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/remote/AppApi.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="126">
+                  <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -111,8 +135,8 @@
           <file leaf-file-name="ProjectsActivity.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsActivity.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="29" column="68" lean-forward="true" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
+                <state relative-caret-position="1296">
+                  <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
                   <folding>
                     <element signature="e#45#1064#0" expanded="true" />
                     <element signature="e#2379#2410#1" expanded="true" />
@@ -124,8 +148,8 @@
           <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/build.gradle">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="620">
-                  <caret line="123" column="18" lean-forward="false" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+                <state relative-caret-position="570">
+                  <caret line="133" column="18" lean-forward="false" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -3908,13 +3932,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/AppInjector.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/ViewModelFactory.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/ViewModelFactory.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/remote/AppApi.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/ApiModule.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/ViewModelModule.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/widgets/GenericAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsViewHolder.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/project_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/Status.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/Reponse.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/searchable.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
@@ -3924,17 +3945,20 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/AppModule.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/model/Query.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/model/Suggestion.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/DataModule.kt" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/AppAplication.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/repository/ProjectDataSource.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/extensions/ContextExtensions.kt" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/Response.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/LiveDatautils.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/LiveDataUtils.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/local/SuggestionDao.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsActivity.kt" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/ApiModule.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/remote/AppApi.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/DataModule.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/Response.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/Status.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/repository/ProjectDataSource.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsViewModel.kt" />
       </list>
     </option>
@@ -3963,38 +3987,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
-            <path>
-              <item name="android-mvvm-sample" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="android-mvvm-sample" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="android-mvvm-sample" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="mvvmsample" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android-mvvm-sample" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="mvvmsample" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android-mvvm-sample" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="mvvmsample" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
             <path>
               <item name="android-mvvm-sample" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
@@ -4003,7 +4000,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -4042,13 +4038,12 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="SearchEverywhereHistoryKey" value="Sugge&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/service/model/Suggestion.kt&#10;Generic&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/widgets/GenericAdapter.kt&#10;Respon&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/util/Response.kt&#10;Contex&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/extensions/ContextExtensions.kt&#10;DataMo&#9;null&#9;null&#10;ProjectR&#9;null&#9;null&#10;sugges&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/service/local/SuggestionDao.kt&#10;Sugges&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/service/model/Suggestion.kt&#10;ViewMode&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/injection/ViewModelModule.kt&#10;Context&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/extensions/ContextExtensions.kt&#10;Project&#9;null&#9;null&#10;ViewModelMod&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/injection/ViewModelModule.kt&#10;DataModu&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/injection/DataModule.kt&#10;AppInj&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/injection/AppInjector.kt&#10;AppMod&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/injection/AppModule.kt&#10;AppApl&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/AppAplication.kt&#10;AppCompo&#9;null&#9;null&#10;AppComp&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/build/tmp/kapt3/stubs/prodDebug/com/bferrari/mvvmsample/injection/AppComponent.java" />
-    <property name="device.picker.selection" value="Pixel_2_XL_API_26" />
+    <property name="SearchEverywhereHistoryKey" value="Status&#9;null&#9;null&#10;DataMod&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/injection/DataModule.kt&#10;ApiMo&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/injection/ApiModule.kt&#10;AppA&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/AppAplication.kt&#10;Sugge&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/service/model/Suggestion.kt&#10;Generic&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/widgets/GenericAdapter.kt&#10;Respon&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/util/Response.kt&#10;Contex&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/extensions/ContextExtensions.kt&#10;DataMo&#9;null&#9;null&#10;ProjectR&#9;null&#9;null&#10;sugges&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/service/local/SuggestionDao.kt&#10;Sugges&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/service/model/Suggestion.kt&#10;ViewMode&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/injection/ViewModelModule.kt&#10;Context&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/extensions/ContextExtensions.kt&#10;Project&#9;null&#9;null&#10;ViewModelMod&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/injection/ViewModelModule.kt&#10;DataModu&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/injection/DataModule.kt&#10;AppInj&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/injection/AppInjector.kt&#10;AppMod&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/injection/AppModule.kt&#10;AppApl&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/src/main/java/com/bferrari/mvvmsample/AppAplication.kt&#10;AppCompo&#9;null&#9;null&#10;AppComp&#9;FILE&#9;file:///home/bruno/git/android-mvvm-sample/app/build/tmp/kapt3/stubs/prodDebug/com/bferrari/mvvmsample/injection/AppComponent.java" />
+    <property name="device.picker.selection" value="Nexus_5_API_27" />
     <property name="last_opened_file_path" value="$USER_HOME$/helabs/ignus/mvvm-android-example" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.1.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -4225,7 +4220,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="59" y="25" width="2501" height="1055" extended-state="6" />
+    <frame x="654" y="84" width="2501" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -4306,24 +4301,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/AppComponent.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsViewModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#45#657#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build/tmp/kapt3/stubs/prodDebug/com/bferrari/mvvmsample/ui/MainActivity.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/PerActivity.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/UiComponent.kt" />
@@ -4359,13 +4336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/remote/AppApi.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -4408,13 +4378,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/Status.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsViewHolder.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -4450,28 +4413,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="68" lean-forward="false" selection-start-line="1" selection-start-column="68" selection-end-line="1" selection-end-column="68" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/model/Project.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/ApiModule.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -4512,28 +4467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/AppAplication.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/DataModule.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="21" column="98" lean-forward="false" selection-start-line="21" selection-start-column="98" selection-end-line="21" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="123" column="18" lean-forward="false" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/extensions/ContextExtensions.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -4548,7 +4481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4556,7 +4488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4572,7 +4503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4580,7 +4510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4600,19 +4529,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/Response.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.12/c3ecbf29cbfecec5f00fcb1442acd0285962eefe/rxjava-2.1.12-sources.jar!/io/reactivex/disposables/CompositeDisposable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="168" column="16" lean-forward="false" selection-start-line="168" selection-start-column="16" selection-end-line="168" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4628,17 +4548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/repository/ProjectDataSource.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#52#390#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4646,7 +4555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="566">
           <caret line="95" column="22" lean-forward="false" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4654,10 +4562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-          <folding>
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1165#1166#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4669,31 +4573,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/LiveDataUtils.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/LiveDataUtils.kt" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.12/c3ecbf29cbfecec5f00fcb1442acd0285962eefe/rxjava-2.1.12-sources.jar!/io/reactivex/Observable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="38" column="22" lean-forward="false" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        <state relative-caret-position="290">
+          <caret line="15061" column="38" lean-forward="false" selection-start-line="15061" selection-start-column="38" selection-end-line="15061" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="133" column="18" lean-forward="false" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/AppAplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/ApiModule.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="57" column="9" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/0.21/eb1758860bc25bb4905c084886cd7272300a0bb1/kotlinx-coroutines-core-0.21-sources.jar!/kotlinx/coroutines/experimental/Deferred.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="80" column="24" lean-forward="false" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding>
+            <element signature="e#45#1064#0" expanded="true" />
+            <element signature="e#2379#2410#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/injection/DataModule.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/Status.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/remote/AppApi.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/service/repository/ProjectDataSource.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#52#320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/util/Response.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="65" lean-forward="false" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsViewModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="390">
+          <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
           <folding>
-            <element signature="e#45#657#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bferrari/mvvmsample/ui/projects/ProjectsActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="29" column="68" lean-forward="true" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
-          <folding>
-            <element signature="e#45#1064#0" expanded="true" />
-            <element signature="e#2379#2410#1" expanded="true" />
+            <element signature="e#45#652#0" expanded="true" />
           </folding>
         </state>
       </provider>

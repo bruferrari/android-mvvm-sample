@@ -18,9 +18,8 @@ class DataModule {
     @Provides
     @Singleton
     fun providesProjectDataSource(api: AppApi,
-                                  suggestionDao: SuggestionDao,
-                                  schedulerProvider: SchedulerProviderContract): ProjectDataSource
-            = ProjectDataSource(api, suggestionDao, schedulerProvider)
+                                  suggestionDao: SuggestionDao): ProjectDataSource
+            = ProjectDataSource(api, suggestionDao)
 
     @Provides
     @Singleton

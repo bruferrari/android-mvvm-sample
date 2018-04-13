@@ -77,7 +77,6 @@ class ProjectsActivity : AppCompatActivity(), Injectable {
 
     override fun onDestroy() {
         super.onDestroy()
-        viewModel.unsubscribe()
     }
 
     private fun handleUiWidgets() {

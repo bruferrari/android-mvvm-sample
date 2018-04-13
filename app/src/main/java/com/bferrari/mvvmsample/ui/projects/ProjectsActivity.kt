@@ -101,7 +101,7 @@ class ProjectsActivity : AppCompatActivity(), Injectable {
 
     private fun setupSearchWidget() {
 
-        floatingSearchView.setOnQueryChangeListener { oldQuery, newQuery ->
+        floatingSearchView.setOnQueryChangeListener { _, _ ->
             floatingSearchView.swapSuggestions(lastQueries)
         }
 

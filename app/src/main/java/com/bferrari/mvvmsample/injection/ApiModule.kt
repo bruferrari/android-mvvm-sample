@@ -8,6 +8,7 @@ import com.bferrari.mvvmsample.extensions.isConnected
 import com.bferrari.mvvmsample.service.remote.AppApi
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import com.jakewharton.retrofit2.adapter.kotlin.coroutines.experimental.CoroutineCallAdapterFactory
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -63,7 +64,7 @@ open class ApiModule {
     @Singleton
     fun providesAppApi(okHttpClient: OkHttpClient): AppApi
             = Retrofit.Builder()
-                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .addCallAdapterFactory(CoroutineCallAdapterFactory())
                 .addConverterFactory(GsonConverterFactory.create())
                 .baseUrl(BuildConfig.API_URL)
                 .client(okHttpClient)

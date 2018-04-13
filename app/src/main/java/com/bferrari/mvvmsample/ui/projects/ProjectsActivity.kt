@@ -75,10 +75,6 @@ class ProjectsActivity : AppCompatActivity(), Injectable {
         })
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-    }
-
     private fun handleUiWidgets() {
         progressBar.hide()
         swipeRefreshLayout.isRefreshing = false

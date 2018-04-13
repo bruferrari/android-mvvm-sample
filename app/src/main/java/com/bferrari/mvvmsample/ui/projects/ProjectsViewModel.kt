@@ -6,7 +6,6 @@ import com.bferrari.mvvmsample.service.model.Project
 import com.bferrari.mvvmsample.service.model.Suggestion
 import com.bferrari.mvvmsample.service.repository.ProjectDataSource
 import com.bferrari.mvvmsample.util.Response
-import io.reactivex.disposables.CompositeDisposable
 import kotlinx.coroutines.experimental.CommonPool
 import kotlinx.coroutines.experimental.android.UI
 import kotlinx.coroutines.experimental.async
@@ -16,21 +15,13 @@ import javax.inject.Inject
 
 interface ProjectsViewModelContract {
 
-    fun unsubscribe()
-
     fun getProjectsObservable(): MutableLiveData<Response<Pair<List<Project>, List<Suggestion>>>>
 }
 
 class ProjectsViewModel
     @Inject constructor(private val dataSource: ProjectDataSource) : ViewModel(), ProjectsViewModelContract {
 
-    private val compositeDisposable = CompositeDisposable()
-
     private val data = MutableLiveData<Response<Pair<List<Project>, List<Suggestion>>>>()
-
-    override fun unsubscribe() {
-        compositeDisposable.dispose()
-    }
 
     override fun getProjectsObservable() = data
 

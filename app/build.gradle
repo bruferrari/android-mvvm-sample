@@ -103,16 +103,11 @@ dependencies {
 
     //Retrofit
     implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
-    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.retrofitVersion"
     implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
     implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okHttpVersion"
 
     //Timber
     implementation "com.jakewharton.timber:timber:$rootProject.timberVersion"
-
-    //Rx Java
-    implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxJavaVersion"
-    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxAndroidVersion"
 
     //Lifecycle
     implementation "android.arch.lifecycle:extensions:$rootProject.lifecycleVersion"

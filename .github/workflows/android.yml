@@ -18,6 +18,6 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Gradle
-      run: ./gradlew build --debug --stacktrace
+      run: ./gradlew build --stacktrace
     - name: Run unit tests
       run: ./gradlew test
